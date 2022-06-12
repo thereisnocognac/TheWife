@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    /* background: grey; */
+    border-top: 1px solid white;
+    padding: 4rem 3rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index: 2;
+}
+
+header a {
+    color: white;
+}
+
+header div {
+    width: 50%;
+}
+
+.nav-container a {
+    margin: 0 3rem;
+    font-size: 1.25em;
+}
+
+.nav-container a:hover {
+    color: #22333b;
+}
+
+.image-container {
+    text-align: right;
+}

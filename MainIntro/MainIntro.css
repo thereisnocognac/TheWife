@@ -11,6 +11,7 @@ background: linear-gradient(60deg,
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 .main-intro div {
@@ -20,6 +21,6 @@ background: linear-gradient(60deg,
 
 
 .main-intro img {
-
+    
 }
 
