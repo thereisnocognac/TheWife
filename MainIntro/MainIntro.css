@@ -1,10 +1,10 @@
 .main-intro {
-    background: rgb(255,255,255);
+    background: #A4C3B2;
 background: linear-gradient(60deg,
- rgba(255,255,255,1) 0%,
- rgba(0,255,226,1) 0%,
-  rgba(202,255,191,1) 16%,
-  rgba(0,255,226,1) 100%);
+ #A4C3B2 50%,
+ #CCE3DE 25%,
+  #EAF4F4 100%,
+  #6B9080 0%);
 
   height: 100vh;
   width: auto;
@@ -19,8 +19,10 @@ background: linear-gradient(60deg,
     overflow: hidden;
 }
 
-
-.main-intro img {
-    
+.main-intro-left{
+    display: flex;
+    align-items: center;
 }
+
+
 

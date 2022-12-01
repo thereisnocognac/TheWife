@@ -4,32 +4,71 @@ header {
     align-items: center;
     height: 5rem;
     width: 100%;
-    /* background: grey; */
     border-top: 1px solid white;
     padding: 4rem 3rem;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0; /* required */
+    /* position: sticky;
+    position: -webkit-sticky; */
+    position: fixed;
+    top: 0;
     z-index: 2;
+    background-color: transparent;
 }
 
 header a {
-    color: white;
+    color: #6B9080;
+    overflow: hidden;
+    position: relative;
 }
 
 header div {
     width: 50%;
 }
 
-.nav-container a {
+.nav-container-left a {
     margin: 0 3rem;
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 
-.nav-container a:hover {
-    color: #22333b;
+.nav-container-right a {
+    margin: 0 3rem;
+    font-size: 1.2em;
+    color: #F6FFF8;
+}
+
+.nav-container-left a:hover {
+    color: #CCE3DE;
+}
+
+.nav-container-right a:hover {
+    color: #CCE3DE;
 }
 
 .image-container {
     text-align: right;
+}
+
+
+.nav-container-left a:hover {
+    color: white;
+}
+
+.nav-container-left a::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;  
+    background:#7a7777;
+    opacity: 0;
+    transform: translate(8px, 28px);
+    transition: transform 500ms, opacity 500ms;
+    width: 105%;
+    z-index: -1;
+}
+
+
+.nav-container-left a:hover::after {
+    transform: translate(15px, 3px);
+    opacity: 0.25;
 }
