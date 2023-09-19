@@ -1,0 +1,54 @@
+.aboutOne {
+    margin-top: 15%;
+    line-height: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    gap: 4rem;
+}
+
+#aboutAvatar {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#aboutChat {
+    color: rgb(9, 84, 246);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+
+.aboutOne {
+    margin-top: 10%;
+    line-height: 1.75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+#aboutPicture {
+    width: 50%;
+    height: auto;
+}
+
+#aboutAvatar {
+    width: 50%;
+    height: auto;
+}
+
+#aboutPara {
+    width: 50%;
+    height: auto;
+}
+
+#aboutPara {
+    align-self: center;
+
+}
+
+}

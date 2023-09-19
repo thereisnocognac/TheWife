@@ -1,0 +1,64 @@
+.headerIllus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100vw;
+    /* margin-top: 2rem; */
+    padding-top: 5rem;
+    background-color: #A4C3B2;
+    border-bottom: 2.5px solid rgb(155, 154, 154);
+}
+
+.galleryIllus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.galleryIllus div {
+    height: auto;
+    width: 400px;
+    text-align: center;
+}
+
+.galleryIllus img {
+    height: auto;
+    width: 300px;
+    /* border: 1px solid black; */
+    /* box-shadow: 1.5px 1.5px 1.5px 1.5px white; */
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.galleryIllus img:hover {
+    box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+    transform: scale(1.05);
+    filter: brightness(1.10);
+    transition: box-shadow 0.25s , transform 0.25s , filter 0.25s ;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .galleryIllus img {
+        height: auto;
+        width: 40%;
+    }
+
+    .headerIllus {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .galleryIllus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+}
