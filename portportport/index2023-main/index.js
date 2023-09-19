@@ -17,10 +17,10 @@ function myFunction() {
 
 function anotherFunction() {
   var y = document.getElementById("explorer");
-  if (y.textContent === "Explore") {
-    y.textContent = "Let's see..."
-  } else if (y.textContent === "Let's see...") {
+  if (y.textContent === "Let's see...") {
     y.textContent = "Explore"
+  } else if (y.textContent === "Explore") {
+    y.textContent = "Let's see..."
   }
 }
 
